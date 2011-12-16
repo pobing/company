@@ -1,0 +1,244 @@
+@charset "utf-8";
+* {margin:0;padding:0;}
+html {background:#D5D5D5;}
+body {font:normal 12px/1.6em  Arial,"微软雅黑","宋体";color:#333333;width:900px;margin:0 auto; background-color: #FFFFFF;
+}
+table {border-collapse:collapse;border-spacing:0;empty-cells:show;text-align:left;}
+th,td {border-collapse:collapse;}
+ol,ul {list-style:none;}
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+input,select,form img,button {vertical-align:middle;}
+img {border:0;}
+button {cursor:pointer;}
+
+#header{ z-index:1;}
+#header:after{ display:block; line-height:0; clear:both; content:""; overflow:hidden; height:0; font-size:0px;}
+#logoandcontent{ z-index:1; height:75px;}
+#logoandcontent:after{ display:block; line-height:0; clear:both; content:""; overflow:hidden; height:0; font-size:0px;}
+#topimg{
+	background:#0077c7 url(../images/topimg.gif) left bottom repeat-x;
+	height:2px;
+	text-indent:-9000px;
+	line-height:2px;
+}
+#logo{
+	width:220px;
+	text-align:center;
+	float:left;
+	height:75px;
+	background:url(../images/logo.gif) center center no-repeat;
+	text-indent:-9000px;
+}
+#headcontent{
+	float:left;
+	width:680px;
+	height:75px;
+}
+.language{
+	width:100%;
+	text-align:right;
+}
+.language h1{
+	float:right;
+	margin-right:20px;
+	font-size:12px;
+	font-weight:normal;
+	color:#2f90dd;
+}
+.language ul{
+float:right;
+margin-right:10px;
+_display:inline;}
+.language ul li{
+float:left;
+margin-right:10px;
+_display:inline;
+color:#2f90dd;
+}
+.language ul li a{
+color:#2f90dd;
+}
+.nav{
+	clear:both;
+}
+.nav ul li{
+	float:right;
+	margin-right:20px;	
+	margin-top:32px;
+	height:16px;	
+	_display:inline;
+	}
+.nav a{
+	color:#a7a7a7;
+	font-weight:bold;
+	font-size:12px;
+}
+.nav a:hover{
+	color:#646363;
+	text-decoration:none;
+	display:block;
+}
+.navattr a{
+	color:#a7a7a7;
+	font-weight:bold;
+	font-size:12px;
+	border-bottom:5px solid #b4cf1e; display:block;color:#646363;
+}
+.height a{
+	color:#d70006!important;
+}
+.display_none{
+	display:none;
+}
+.banner{
+background:url(../images/banner.gif) left top repeat-y;
+height:69px;
+padding-top:10px;
+}
+.banner .mianbx{
+	margin-left:20px;
+	float:left;
+	width:25%;
+	color:#6ec2ff;
+	_display:inline;
+}
+.banner .mianbx a{
+	color:#6ec2ff;
+}
+.lastnav{
+	width:60%;
+	float:right;
+	overflow:hidden;
+}
+.lastnav .lastnavul ul li{
+	float:right;
+	margin-right:20px;
+	height:20px;
+	line-height:20px;
+	_display:inline;
+}
+.lastnav .lastnavul ul li a{
+	color:#fff;
+}
+.lastnavheight a{
+	color:#b4cf1e!important;
+	font-weight:bold;
+	}
+.user span{
+	padding-left:10px;
+}
+.user{
+	clear:both;
+	text-align:right;
+	padding-right:20px;
+	padding-top:16px;
+	height:22px;
+	line-height:22px;
+	color:#6ec2ff;
+}
+.user input{
+	color:#5e5e5e;
+	background-color:#fff;
+	border:1px solid #c2dcf5;
+	height:19px;
+	line-height:19px;
+	width:100px;
+	margin-left:10px;
+	}
+.user input.tuichu{
+	color:#5e5e5e;
+	background-color:#b1bbb0;
+	border:1px solid #c2dcf5;
+	height:19px;
+	line-height:19px;
+	width:50px;
+	margin-left:10px;
+	}
+#contains{
+	background:#fff url(../images/bgimg.gif) left top repeat-y;
+	zoom:1;
+}
+#contains:after{
+display:block; line-height:0; clear:both; content:""; overflow:hidden; height:0; font-size:0px;
+}
+#contains .main{
+	width:590px;
+	margin-left:10px;
+	float:left;
+	_display:inline;
+	height:470px;
+}
+#contains .side{
+	width:240px;
+	float:left;
+	padding-left:50px;
+	height:420px;
+	color:#747474;}
+#contains .main .content{
+	padding:10px 0 10px 18px;
+	color:#747474;
+}
+.side h3{
+	padding-top:35px;
+	font-size:12px;
+}
+.side h3 a{
+	color:#747474;
+	}
+.side p,.side ul{
+	padding-left:1em;
+}
+.side p a,.side ul li a{
+	color:#747474;
+}
+
+
+.content h2{
+font-size:14px;
+padding-bottom:5px;
+}
+#foot{
+	border-top:solid 1px #0f2c90;
+}
+.ryzz{
+	margin:10px;
+}
+.ryzz h1{
+	font-size:14px;
+	color:#7d7d7d;
+	text-indent:10px;
+	padding-top:20px;
+	}
+.ryzz li{
+float:left;
+padding:5px 2px;
+width:30%;
+}
+
+.linkcss{
+
+
+	
+	
+	color:#747474;}
+}
+#contains .pro_main{
+	width:590px;
+	margin-left:10px;
+	float:left;
+	_display:inline;
+	height:470px;
+	overflow-x:none;
+	overflow-y:scroll;
+}
+#contains .main .wh_content{
+	padding:10px 0 10px 18px;
+	color:#747474;
+}
+.gundong3{
+	
+	line-height:22px;
+	text-align:left;
+	
+}

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+		 <servlet>
+	  <servlet-name>Controller</servlet-name>
+  <servlet-class>com.max.util.Controller</servlet-class>
+  <load-on-startup>0</load-on-startup>
+ </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>adminLog</servlet-name>
+    <servlet-class>com.max.action.adminLog</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addUser</servlet-name>
+    <servlet-class>com.max.action.addUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delUser</servlet-name>
+    <servlet-class>com.max.action.delUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateUser</servlet-name>
+    <servlet-class>com.max.action.updateUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>removeUser</servlet-name>
+    <servlet-class>com.max.action.removeUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>pageLog</servlet-name>
+    <servlet-class>com.max.action.pageLog</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addNews</servlet-name>
+    <servlet-class>com.max.action.addNews</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delNews</servlet-name>
+    <servlet-class>com.max.action.delNews</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>toUserEdit</servlet-name>
+    <servlet-class>com.max.action.toUserEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>upNewsImg</servlet-name>
+    <servlet-class>com.max.action.upNewsImg</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>toNewsOne</servlet-name>
+    <servlet-class>com.max.action.toNewsOne</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addMsg</servlet-name>
+    <servlet-class>com.max.action.addMsg</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delMsg</servlet-name>
+    <servlet-class>com.max.action.delMsg</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addPro</servlet-name>
+    <servlet-class>com.max.action.addPro</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delPro</servlet-name>
+    <servlet-class>com.max.action.delPro</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updatePro</servlet-name>
+    <servlet-class>com.max.action.updatePro</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>toProEdit</servlet-name>
+    <servlet-class>com.max.action.toProEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>toNewsEdit</servlet-name>
+    <servlet-class>com.max.action.toNewsEdit</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+<filter>
+
+<filter-name>SetCharacterEncodingFilter</filter-name> 
+   <filter-class>com.max.util.SetCharacterEncodingFilter</filter-class> 
+   <init-param> 
+    <param-name>encoding</param-name> 
+    <param-value>gb2312</param-value> 
+   </init-param> 
+  </filter> 
+
+  <servlet-mapping>
+  <servlet-name>Controller</servlet-name>
+  <url-pattern>/ctors</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>adminLog</servlet-name>
+    <url-pattern>/adminLog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addUser</servlet-name>
+    <url-pattern>/addUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delUser</servlet-name>
+    <url-pattern>/delUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateUser</servlet-name>
+    <url-pattern>/updateUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>removeUser</servlet-name>
+    <url-pattern>/removeUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>pageLog</servlet-name>
+    <url-pattern>/pageLog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addNews</servlet-name>
+    <url-pattern>/addNews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delNews</servlet-name>
+    <url-pattern>/delNews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>toUserEdit</servlet-name>
+    <url-pattern>/toUserEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>upNewsImg</servlet-name>
+    <url-pattern>/upNewsImg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>toNewsOne</servlet-name>
+    <url-pattern>/toNewsOne</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addMsg</servlet-name>
+    <url-pattern>/addMsg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delMsg</servlet-name>
+    <url-pattern>/delMsg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addPro</servlet-name>
+    <url-pattern>/addPro</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delPro</servlet-name>
+    <url-pattern>/delPro</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updatePro</servlet-name>
+    <url-pattern>/updatePro</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>toProEdit</servlet-name>
+    <url-pattern>/toProEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>toNewsEdit</servlet-name>
+    <url-pattern>/toNewsEdit</url-pattern>
+  </servlet-mapping>
+<filter-mapping> 
+    <filter-name>SetCharacterEncodingFilter</filter-name> 
+    <url-pattern>/*</url-pattern> 
+  </filter-mapping> 
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+    <!-- 初始化fckeditor -->
+
+  <servlet>
+		<servlet-name>ConnectorServlet</servlet-name>
+		<servlet-class>
+			net.fckeditor.connector.ConnectorServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConnectorServlet</servlet-name>
+		<!-- Do not wrap this line otherwise Glassfish will fail to load this file -->
+		<url-pattern>/fckeditor/editor/filemanager/connectors/*</url-pattern>
+	</servlet-mapping>
+
+	
+</web-app>
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+dayName = new Array("", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday") 
+monName = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December") 
+now = new Date 
+// End --> 
+</script> 
+<SCRIPT LANGUAGE="JavaScript"> 
+
+<!-- This script and many more are available free online at --> 
+<!-- The JavaScript Source!! http://javascript.internet.com --> 
+
+<!-- Begin 
+var strDay; 
+if ((now.getDate() == 1) || (now.getDate() != 11) && (now.getDate() % 10 == 1)) // Correction for 11th and 1st/21st/31st 
+strDay = "st "; 
+else if ((now.getDate() == 2) || (now.getDate() != 12) && (now.getDate() % 10 == 2)) // Correction for 12th and 2nd/22nd/32nd 
+strDay = "nd "; 
+else if ((now.getDate() == 3) || (now.getDate() != 13) && (now.getDate() % 10 == 3)) // Correction for 13th and 3rd/23rd/33rd 
+strDay = "rd "; 
+else 
+strDay = "th "; 
+document.write( 
+dayName[now.getDay()] 
++ 
+" the " 
++ 
+now.getDate() 
++ 
+strDay 
++ 
+"of " 
++ 
+monName[now.getMonth()] 
++ 
+", " 
++ 
+now.getFullYear() 
+) 
+// End --> 
+</script>
+
+
+
+<script language="vbscript">
+
+Dim A
+A = Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+settimeout "clock",1000
+sub clock()
+y=Year(now)
+mo=A(Month(now)-1)
+d=Day(now)
+if d<10 then d="0"&d
+h=hour(now)
+m=minute(now)
+if m<10 then m="0"&m
+s=second(now)
+if s<10 then s="0"&s
+nowtime=d&"."&mo&"."&y&" "&h&":"&m&":"&s&"(GMT+8)"
+nowt.innerhtml=nowtime
+settimeout "clock",1000
+end sub
+
+</script>
+<center id="nowt"></center>
+
+ 
+ 
+</body>
+</html>
